@@ -45,9 +45,11 @@
 // ];
 
 var cars = [];
-if ()
+
 var carsJSON = localStorage.getItem("cars");
-var cars = JSON.parse(carsJSON);
+if (carsJSON != null) {
+    var cars = JSON.parse(carsJSON);
+}
 
 var main = document.getElementById("main");
 var toAppend = "";
